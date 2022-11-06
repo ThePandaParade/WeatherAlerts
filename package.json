@@ -4,6 +4,7 @@
   "description": "Weather alert library",
   "main": "index.js",
   "scripts": {
+    "build": "rd built /S /Q && npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,8 +24,12 @@
   },
   "homepage": "https://github.com/WhenDawnEnds/weatheralerts#readme",
   "dependencies": {
-    "typescript": "^4.8.4",
     "rss-parser": "^3.12.0",
-    "xml-js": "^1.6.11"
+    "typescript": "^4.8.4",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
   }
 }
