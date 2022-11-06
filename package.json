@@ -1,0 +1,30 @@
+{
+  "name": "weatheralerts",
+  "version": "1.0.0",
+  "description": "Weather alert library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhenDawnEnds/weatheralerts.git"
+  },
+  "keywords": [
+    "eas",
+    "metoffice",
+    "metservice",
+    "nws"
+  ],
+  "author": "WhenDawnEnds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhenDawnEnds/weatheralerts/issues"
+  },
+  "homepage": "https://github.com/WhenDawnEnds/weatheralerts#readme",
+  "dependencies": {
+    "typescript": "^4.8.4",
+    "rss-parser": "^3.12.0",
+    "xml-js": "^1.6.11"
+  }
+}
