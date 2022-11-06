@@ -29,3 +29,13 @@ export interface MetServiceAlert extends BaseWeatherAlert {
     urgency: string;
     issueDate: Date;
 }
+
+export interface MetEireannAlert extends BaseWeatherAlert {
+    description: string;
+    certainty: string;
+    level: string;
+    regions: Array<string>;
+    issued: string;
+    updated: string;
+    headline: string;
+}

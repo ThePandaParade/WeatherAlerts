@@ -9,7 +9,7 @@
 - [ ] Canada (Enviroment Canada / Alert Ready)
 - [x] New Zealand (MetService)
 - [ ] Australia (Bureau of Meteorology) *2
-- [ ] Ireland (Met Éireann)
+- [x] Ireland (Met Éireann)
 - [ ] Germany (Deutscher Wetterdienst)
 - [ ] France (Météo France)
 - [ ] Netherlands (KNMI)
@@ -44,4 +44,4 @@ console.log(alerts);
 
 - Most of the time, the meterological offices in the supported countries will require you to link to any active alerts. Please check the terms and conditions of the weather alert service you are using before using this library.
 - This library is not affiliated with any of the weather alert services listed above.
-- Some of the alerts may not be in English. This is due to the fact that the weather alert services do not provide an English translation of the alert. This library will return the alert in the language it is provided in. However, the following countries do provide an English translation of the alert: United Kingdom, United States, New Zealand, Australia.
+- Some of the alerts may not be in English. This is due to the fact that the weather alert services do not provide an English translation of the alert. This library will return the alert in the language it is provided in. However, the following countries do provide an English translation of the alert: United Kingdom, United States, New Zealand, Australia, Ireland.
