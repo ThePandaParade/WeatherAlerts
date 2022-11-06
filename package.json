@@ -4,7 +4,7 @@
   "description": "Weather alert library",
   "main": "index.js",
   "scripts": {
-    "build": "rd built /S /Q && npx tsc",
+    "build": "rd lib /S /Q && npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

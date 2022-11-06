@@ -6,9 +6,14 @@ export interface BaseWeatherAlert {
     region: string;
     start_date: string;
     end_date: string;
+    link: string;
 }
 
 export interface MetOfficeAlert extends BaseWeatherAlert {
     counties: string;
 }
 
+export interface NWSAlert extends BaseWeatherAlert {
+    description: string;
+    issueDate: Date;
+}

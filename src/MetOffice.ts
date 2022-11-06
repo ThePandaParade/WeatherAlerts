@@ -63,7 +63,8 @@ module.exports.getAlerts = async function getAlerts(region) {
             region: affRegion,
             counties: counties,
             start_date: start_date,
-            end_date: end_date
+            end_date: end_date,
+            link: item.link,
         }
         activeAlerts.push(alertObj);
     })
