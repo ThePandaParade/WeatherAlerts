@@ -10,33 +10,32 @@
 - [x] New Zealand (MetService)
 - [ ] Australia (Bureau of Meteorology) *2
 - [x] Ireland (Met Éireann)
-- [ ] Germany (Deutscher Wetterdienst)
-- [ ] France (Météo France)
-- [ ] Netherlands (KNMI)
-- [ ] Belgium (Royal Meteorological Institute of Belgium)
-- [ ] Denmark (Meteorological Institute of Denmark)
-- [ ] Norway (Meteorological Institute of Norway)
-- [ ] Sweden (SMHI)
-- [ ] Finland (Finnish Meteorological Institute)
-- [ ] Spain (AEMET)
-- [ ] Portugal (IPMA)
-- [ ] Italy (Agenzia Nazionale per le Forecast e la Meteorologia)
-- [ ] Switzerland (MeteoSwiss)
-- [ ] Austria (ZAMG)
-- [ ] Poland (Polish Meteorological Service)
+- [ ] Germany (Deutscher Wetterdienst)*3
+- [ ] France (Météo France)*3
+- [ ] Netherlands (KNMI)*3
+- [ ] Belgium (Royal Meteorological Institute of Belgium)*3
+- [ ] Denmark (Meteorological Institute of Denmark)*3
+- [ ] Norway (Meteorological Institute of Norway)*3
+- [ ] Sweden (SMHI)*3
+- [ ] Finland (Finnish Meteorological Institute)*3
+- [ ] Spain (AEMET)*3
+- [ ] Portugal (IPMA)*3
+- [ ] Italy (Agenzia Nazionale per le Forecast e la Meteorologia)*3
+- [ ] Switzerland (MeteoSwiss)*3
+- [ ] Austria (ZAMG)*3
+- [ ] Poland (Polish Meteorological Service)*3
 
 *1 - The parser I use for XML > JSON excludes all entries prefixed with "cap:", meaning data such as effective, expires, onset, urgency, etc. are not included. I am working on a fix for this, however I am not sure if it will be possible. All help is appreciated.  
-*2 - The Bureau of Meteorology code is written, however, it results in a 403 error. I am unsure if this is my fault or TBOM's fault.
+*2 - The Bureau of Meteorology code is written, however, it results in a 403 error. I am unsure if this is my fault or TBOM's fault.  
+*3 - MeteoAlarm is used for these countries. And it threw a 406 error. How is it not acceptable? I have no idea. I am working on a fix for this.
 
 ### How to use:
 
 ```typescript
 import { MetOffice } from "weather-alerts";
 
-const metOffice = new MetOffice();
-
-metOffice.getAlerts().then(alerts => {
-console.log(alerts);
+MetOffice.getAlerts().then(alerts => {
+    console.log(alerts);
 });
 ```
 

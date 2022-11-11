@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/WhenDawnEnds/weatheralerts#readme",
   "dependencies": {
+    "request": "^2.88.2",
     "rss-parser": "^3.12.0",
     "typescript": "^4.8.4",
     "xml-js": "^1.6.11",

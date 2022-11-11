@@ -38,4 +38,12 @@ export interface MetEireannAlert extends BaseWeatherAlert {
     issued: string;
     updated: string;
     headline: string;
+    capId: string;
+    id: string;
+}
+
+export interface MeteoAlarmAlert extends BaseWeatherAlert { // Covers all EU member states.
+    description: string;
+    raw: string;
+    published: string;
 }
