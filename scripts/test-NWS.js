@@ -6,7 +6,7 @@ const NWS = require("../lib/NationalWeatherService.js");
 // Print out the current alerts for the US
 // Needs to be in a function to use await
 async function test() {
-    const alerts = await NWS.getAlerts("US");
+    const alerts = await NWS.getAlerts("AK");
     console.log(alerts);
 }
 

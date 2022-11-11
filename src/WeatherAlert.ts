@@ -16,6 +16,11 @@ export interface MetOfficeAlert extends BaseWeatherAlert {
 export interface NWSAlert extends BaseWeatherAlert {
     description: string;
     issueDate: Date;
+    urgency: string;
+    certainty: string;
+    status: string;
+    msgType: string;
+    author: string;
 }
 
 export interface MetServiceAlert extends BaseWeatherAlert {

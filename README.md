@@ -5,29 +5,28 @@
 ### Currently supported countries:
 
 - [x] United Kingdom (Met Office)
-- [x] United States (National Weather Service)*1
+- [x] United States (National Weather Service)
 - [ ] Canada (Enviroment Canada / Alert Ready)
 - [x] New Zealand (MetService)
-- [ ] Australia (Bureau of Meteorology) *2
+- [ ] Australia (Bureau of Meteorology) *1
 - [x] Ireland (Met Éireann)
-- [ ] Germany (Deutscher Wetterdienst)*3
-- [ ] France (Météo France)*3
-- [ ] Netherlands (KNMI)*3
-- [ ] Belgium (Royal Meteorological Institute of Belgium)*3
-- [ ] Denmark (Meteorological Institute of Denmark)*3
-- [ ] Norway (Meteorological Institute of Norway)*3
-- [ ] Sweden (SMHI)*3
-- [ ] Finland (Finnish Meteorological Institute)*3
-- [ ] Spain (AEMET)*3
-- [ ] Portugal (IPMA)*3
-- [ ] Italy (Agenzia Nazionale per le Forecast e la Meteorologia)*3
-- [ ] Switzerland (MeteoSwiss)*3
-- [ ] Austria (ZAMG)*3
-- [ ] Poland (Polish Meteorological Service)*3
+- [ ] Germany (Deutscher Wetterdienst)*2
+- [ ] France (Météo France)*2
+- [ ] Netherlands (KNMI)*2
+- [ ] Belgium (Royal Meteorological Institute of Belgium)*2
+- [ ] Denmark (Meteorological Institute of Denmark)*2
+- [ ] Norway (Meteorological Institute of Norway)*2
+- [ ] Sweden (SMHI)*2
+- [ ] Finland (Finnish Meteorological Institute)*2
+- [ ] Spain (AEMET)*2
+- [ ] Portugal (IPMA)*2
+- [ ] Italy (Agenzia Nazionale per le Forecast e la Meteorologia)*2
+- [ ] Switzerland (MeteoSwiss)*2
+- [ ] Austria (ZAMG)*2
+- [ ] Poland (Polish Meteorological Service)*2
 
-*1 - The parser I use for XML > JSON excludes all entries prefixed with "cap:", meaning data such as effective, expires, onset, urgency, etc. are not included. I am working on a fix for this, however I am not sure if it will be possible. All help is appreciated.  
-*2 - The Bureau of Meteorology code is written, however, it results in a 403 error. I am unsure if this is my fault or TBOM's fault.  
-*3 - MeteoAlarm is used for these countries. And it threw a 406 error. How is it not acceptable? I have no idea. I am working on a fix for this.
+*1 - The Bureau of Meteorology code is written, however, it results in a 403 error. I am unsure if this is my fault or TBOM's fault.  
+*2 - MeteoAlarm is used for these countries. And it threw a 406 error. How is it not acceptable? I have no idea. I am working on a fix for this.
 
 ### How to use:
 
