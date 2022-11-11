@@ -37,9 +37,9 @@ import { MetEireannAlert } from "./WeatherAlert";
 // So I'm going to use that instead.
 module.exports.getAlerts = async function getAlerts() {
     // Use request to get the JSON feed
+    const alerts = [];
     request('https://www.met.ie/Open_Data/json/warning_IRELAND.json', { json: true }, async (err, res, body) => {
         if (err) { throw err }
-        const alerts = [];
         body.forEach(item => {
             // To be honest, we barely need to do anything here.
             // The JSON feed is already in the format we need.
@@ -74,9 +74,9 @@ module.exports.getAlerts = async function getAlerts() {
                 capId: item.capId,
                 id: item.id
             }
-            
+
             alerts.push(alertObj);
         });
-    //console.log(alerts);
+    });
     return alerts;
-});}
+}
