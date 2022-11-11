@@ -2,7 +2,13 @@
 // Doesn't mean my sanity is intact.
 
 const Parser = require('rss-parser');
-const parser = new Parser();
+const parser = new Parser({
+    customFields: {
+        item: [
+            ['description', 'description', {includeSnippet: true}]
+        ]
+    }
+});
 
 import { MeteoAlarmAlert } from "./WeatherAlert";
 

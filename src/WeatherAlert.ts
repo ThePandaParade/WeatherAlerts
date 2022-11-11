@@ -52,3 +52,7 @@ export interface MeteoAlarmAlert extends BaseWeatherAlert { // Covers all EU mem
     raw: string;
     published: string;
 }
+
+export interface BoMAlert extends BaseWeatherAlert {
+    pubDate: Date;
+}
