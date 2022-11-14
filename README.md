@@ -8,11 +8,11 @@
 - [x] United States (National Weather Service)
 - [ ] Canada (Enviroment Canada / Alert Ready)
 - [x] New Zealand (MetService)
-- [ ] Australia (Bureau of Meteorology) *1
+- [x] Australia (Bureau of Meteorology) *1
 - [x] Ireland (Met Éireann)
 - [ ] All European Union member states (MeteoAlarm)*2\*3
 
-*1 - The Bureau of Meteorology code is written, however, it results in a 403 error. I am 60% sure this is BoM's fault.  
+*1 - The Bureau of Meteorology code is written, however, it results in a 403 error. I am 100% sure this is BoM's fault. However if you have any ideas on how to fix this, please let me know.  
 *2 - And it threw a 406 error. How is it not acceptable? I have no idea. I am working on a fix for this.  
 *3 - Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain and Sweden.
 
