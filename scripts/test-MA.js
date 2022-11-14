@@ -6,7 +6,7 @@ const MeteoAlarm = require("../lib/MeteoAlarm.js");
 // Print out the current alerts for Belgium
 // Needs to be in a function to use await
 async function test() {
-    const alerts = await MeteoAlarm.getAlerts("Belgium");
+    const alerts = await MeteoAlarm.getAlerts("Ireland");
     console.log(alerts);
 }
 
