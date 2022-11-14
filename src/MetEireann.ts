@@ -38,7 +38,7 @@ import { MetEireannAlert } from "./WeatherAlert";
 module.exports.getAlerts = async function getAlerts() {
     // Use request to get the JSON feed
     const alerts = [];
-    request('https://www.met.ie/Open_Data/json/warning_IRELAND.json', { json: true }, async (err, res, body) => {
+    await request('https://www.met.ie/Open_Data/json/warning_IRELAND.json', { json: true }, async (err, res, body) => {
         if (err) { throw err }
         body.forEach(item => {
             // To be honest, we barely need to do anything here.
@@ -55,7 +55,6 @@ module.exports.getAlerts = async function getAlerts() {
             else if (severity == "Extreme") {
                 severity = "Status Red (Extreme)";
             }
-            console.log(item)
 
             const alertObj: MetEireannAlert = {
                 severity: severity,
@@ -74,9 +73,10 @@ module.exports.getAlerts = async function getAlerts() {
                 capId: item.capId,
                 id: item.id
             }
-
+            console.log(alertObj);
             alerts.push(alertObj);
         });
     });
+    console.log(alerts);
     return alerts;
 }

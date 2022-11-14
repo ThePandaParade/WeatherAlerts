@@ -1,12 +1,19 @@
 const Parser = require('rss-parser');
 const parser = new Parser({
-    // Remove the default user agent, as it's not needed.
     headers: {
-        "User-Agent": ""
+        "User-Agent": "UniversalFeedParser/3.3 +http://feedparser.org/", // I know this isn't ethical or whatever, but it's literally the only way to get the feed to work.,
+        "Host": "www.bom.gov.au",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "Cache-Control": "no-cache",
+        "Content-Type": "application/xml",
+
     },
     // BoM's feed is HTTP, so we need to disable SSL.
     requestOptions: {
-        rejectUnauthorized: false
+        rejectUnauthorized: false,
+        protocol: "http:",
+        method: "GET",
     }
 });
 
